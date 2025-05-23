@@ -1,1 +1,29 @@
+# Site settings
+title: DDDevotion - Мастерство Domain-Driven Design
+description: Освойте Domain-Driven Design и создавайте ПО, которое действительно решает бизнес-задачи
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://dddevotion.github.io" # the base hostname & protocol for your site
+lang: ru
+locale: ru_RU
+timezone: Europe/Moscow
+
+# Theme settings
 theme: jekyll-theme-tactile
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor
+
+# Add custom head includes
+include:
+  - _includes/head-custom.html

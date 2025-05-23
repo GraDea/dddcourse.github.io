@@ -1,0 +1,147 @@
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+
+<!-- Meta -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="language" content="russian">
+<meta name="copyright" content="DDDevotion">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ site.url }}{{ page.url | relative_url }}">
+<meta property="og:title" content="{{ page.title | default: site.title }}">
+<meta property="og:description" content="{{ page.subtitle | default: site.description }}">
+<meta property="og:image" content="{{ '/assets/images/social-preview.jpg' | absolute_url }}">
+<meta property="og:locale" content="ru_RU">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="{{ site.url }}{{ page.url | relative_url }}">
+<meta name="twitter:title" content="{{ page.title | default: site.title }}">
+<meta name="twitter:description" content="{{ page.subtitle | default: site.description }}">
+<meta name="twitter:image" content="{{ '/assets/images/social-preview.jpg' | absolute_url }}">
+
+<!-- SEO -->
+<meta name="description" content="{{ page.subtitle | default: site.description }}">
+<meta name="keywords" content="DDD, Domain-Driven Design, DDD обучение, DDD курсы, проектирование ПО, архитектура ПО, DDD паттерны">
+<link rel="canonical" href="{{ site.url }}{{ page.url | absolute_url }}">
+
+<!-- Additional Styles -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --primary-color: #4a6fa5;    /* Muted blue from the logo */
+    --secondary-color: #2c3e50;  /* Dark blue-gray */
+    --accent-color: #e67e22;     /* Orange accent from the logo */
+    --text-color: #333;
+    --light-bg: #f5f7fa;
+    --border-radius: 8px;
+    --box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+  }
+  
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--secondary-color);
+    margin-top: 2rem;
+    line-height: 1.2;
+  }
+  
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  a:hover {
+    color: #2980b9;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 4rem 1rem 3rem;
+    background: linear-gradient(135deg, #2c3e50 0%, #4a6fa5 100%);
+    color: white;
+    border-radius: var(--border-radius);
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .logo-container {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  }
+  
+  .logo {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .testimonial {
+    font-style: italic;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-left: 4px solid var(--accent-color);
+    margin: 2rem 0;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background: var(--accent-color);
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 1.5rem 0 0.5rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 15px rgba(230, 126, 34, 0.3);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .cta-button:hover {
+    background: #d35400;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(230, 126, 34, 0.4);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.2rem;
+    }
+    
+    .hero p {
+      font-size: 1.2rem;
+    }
+    
+    .features {
+      flex-direction: column;
+    }
+  }
+</style>
