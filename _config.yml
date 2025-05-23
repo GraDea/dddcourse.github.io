@@ -7,14 +7,28 @@ lang: ru
 locale: ru_RU
 timezone: Europe/Moscow
 
-# Theme settings
-remote_theme: pages-themes/cayman@v0.2.0
-plugins:
-  - jekyll-remote-theme
-
 # Build settings
 markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
 
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-remote-theme
+
+# Disable default theme's footer
+plugins_dir: ["_plugins", ".jekyll-cms-gem/plugins"]
+
+# Theme settings
+remote_theme: pages-themes/cayman@v0.2.0
+
+# Add custom head includes
+include:
+  - _includes/head-custom.html
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -24,7 +38,3 @@ markdown: kramdown
 #   - Gemfile.lock
 #   - node_modules
 #   - vendor
-
-# Add custom head includes
-include:
-  - _includes/head-custom.html
