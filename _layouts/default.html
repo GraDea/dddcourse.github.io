@@ -1,43 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "ru-RU" }}">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
-    {% include head-custom.html %}
-    <title>{{ page.title | default: site.title }}</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      body {
-        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      }
-    </style>
-  </head>
-  <body class="bg-gray-50 min-h-screen flex flex-col">
-    <header class="bg-white shadow-sm">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        <div class="flex justify-center">
-          <a href="/" class="text-2xl font-bold text-gray-900 text-center">
-            {{ site.title | default: "DDD Course" }}
-          </a>
-        </div>
-      </div>
-    </header>
-
-    <main class="flex-grow flex flex-col items-center justify-center">
-      <div class="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center">
-        {{ content }}
-      </div>
-    </main>
-
-    <footer class="bg-white mt-12 border-t border-gray-200">
-      <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
-        <p class="text-center text-gray-500 text-sm">
-          &copy; {{ 'now' | date: "%Y" }} {{ site.title | default: "DDD Course" }}. All rights reserved.
-        </p>
-      </div>
-    </footer>
-  </body>
+<head>
+  {% include head-custom.html %}
+  <title>{{ page.title | default: site.title }}</title>
+</head>
+<body>
+  {{ content }}
+</body>
 </html>
