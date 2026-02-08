@@ -1,156 +1,120 @@
 ---
 layout: default
-title: Мастерство Domain-Driven Design
-subtitle: Создавай программное обеспечение, которое приносит реальную пользу бизнесу
+title: DDDevotion — курс по Domain-Driven Design
+subtitle: Освойте DDD и проектируйте системы, которые отражают бизнес-логику
 ---
 
-<header class="container">
-  <div class="logo">DDDevotion</div>
-  <a href="#" class="cta-button" style="margin-top: 0; padding: 0.5rem 1.5rem; font-size: 1rem;">Скоро</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo">DDDevotion</div>
+    <a href="#cta" class="soon-button">Скоро</a>
+  </div>
 </header>
 
 <section class="hero">
   <div class="container">
-    <h1>Освой <span class="highlight">Domain-Driven Design</span></h1>
-    <p>Измени свой подход к разработке ПО и создавай системы, которые действительно решают бизнес-задачи!</p>
-    
-    <div class="model-container">
-      <div class="cube">
-        <div class="face front">Core</div>
-        <div class="face back">Sub</div>
-        <div class="face right">Ctx</div>
-        <div class="face left">Map</div>
-        <div class="face top">DDD</div>
-        <div class="face bottom">Biz</div>
-      </div>
-    </div>
-
-    <button class="cta-button">Узнать когда запуск</button>
-    <p class="cta-subtext">Присоединяйтесь к листу ожидания</p>
+    <p class="eyebrow">Профессиональный курс для практиков</p>
+    <h1>Освой Domain-Driven Design</h1>
+    <p class="hero-subtitle">Научитесь переводить сложные бизнес-требования в устойчивую архитектуру, понятные модели и предсказуемую разработку командного уровня.</p>
   </div>
 </section>
 
-<section class="features">
+<section class="features section-block">
   <div class="container">
-    <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 1rem;">Почему <span class="highlight">Domain-Driven Design?</span></h2>
-    <p style="text-align: center; color: #94a3b8; max-width: 700px; margin: 0 auto;">
-      В современном сложном бизнес-ландшафте программное обеспечение должно быть чем-то большим, чем просто функциональным — оно должно быть продолжением самого бизнеса.
-    </p>
-    
-    <div class="features-grid">
-      <div class="feature-card">
-        <div class="feature-icon">🗣️</div>
-        <h3>Единый Язык</h3>
-        <p style="color: #94a3b8;">Преодолейте разрыв между техническими и бизнес-заинтересованными сторонами с помощью общего языка, который развивается вместе с вашей предметной областью.</p>
-      </div>
-      
-      <div class="feature-card">
-        <div class="feature-icon">🗺️</div>
-        <h3>Стратегический Дизайн</h3>
-        <p style="color: #94a3b8;">Научитесь выявлять основные домены и поддомены, а также эффективно моделировать сложные бизнес-процессы и карты контекстов.</p>
-      </div>
-      
-      <div class="feature-card">
-        <div class="feature-icon">🛠️</div>
-        <h3>Тактические паттерны</h3>
-        <p style="color: #94a3b8;">Освойте сущности, объекты-значения, агрегаты и сервисы домена для создания чистых, тестируемых и поддерживаемых моделей.</p>
-      </div>
+    <h2>Ключевые компетенции</h2>
+    <div class="feature-grid">
+      <article class="feature-card">
+        <h3>Единый язык (Ubiquitous Language)</h3>
+        <p>Построите единый язык между бизнесом и разработкой, чтобы обсуждать предметную область без потери смысла на уровне требований и кода.</p>
+      </article>
+      <article class="feature-card">
+        <h3>Стратегический дизайн (Strategic Design)</h3>
+        <p>Определите границы контекстов, выделите основной домен и научитесь связывать команды и системы через четкие модели взаимодействия.</p>
+      </article>
+      <article class="feature-card">
+        <h3>Тактические паттерны (Tactical Patterns)</h3>
+        <p>Освоите сущности, объекты-значения, агрегаты, репозитории и доменные сервисы для создания чистого и поддерживаемого доменного слоя.</p>
+      </article>
     </div>
   </div>
 </section>
 
-<section class="curriculum">
+<section class="curriculum section-block">
   <div class="container">
-    <h2 style="text-align: center; font-size: 2.5rem;">Структура Курса</h2>
-    <div class="curriculum-list">
-      
-      <div class="module">
-        <div class="module-header">
-          <span>Модуль 1: Основы DDD</span>
-          <span class="module-tag">Введение</span>
+    <h2>Программа курса</h2>
+    <div class="module-list">
+      <article class="module-card">
+        <div class="module-head">
+          <h3>Модуль 1. Мышление DDD</h3>
+          <span class="module-tag">Фундамент</span>
         </div>
-        <div class="module-content">
-          <ul>
-            <li>Понимание ключевых концепций и философии DDD</li>
-            <li>Важность Единого Языка (Ubiquitous Language)</li>
-            <li>Различия стратегического и тактического дизайна</li>
-          </ul>
+        <div class="module-body">
+          Принципы доменного моделирования, роль экспертов предметной области и построение единого языка в продуктовой команде.
         </div>
-      </div>
-
-      <div class="module">
-        <div class="module-header">
-          <span>Модуль 2: Стратегический Дизайн</span>
+      </article>
+      <article class="module-card">
+        <div class="module-head">
+          <h3>Модуль 2. Стратегический дизайн</h3>
           <span class="module-tag">Архитектура</span>
         </div>
-        <div class="module-content">
-          <ul>
-            <li>Ограниченные контексты (Bounded Contexts)</li>
-            <li>Выделение основного домена (Core Domain)</li>
-            <li>Context Mapping и интеграция систем</li>
-          </ul>
+        <div class="module-body">
+          Ограниченные контексты, карта контекстов, выделение основного домена и принципы проектирования границ между командами и подсистемами.
         </div>
-      </div>
-
-      <div class="module">
-        <div class="module-header">
-          <span>Модуль 3: Тактический Дизайн</span>
-          <span class="module-tag">Код</span>
-        </div>
-        <div class="module-content">
-          <ul>
-            <li>Строительные блоки: Сущности, Value Objects, Агрегаты</li>
-            <li>Сервисы домена и Доменные События</li>
-            <li>Репозитории и Фабрики: лучшие практики</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="module">
-        <div class="module-header">
-          <span>Модуль 4: Шаблоны Внедрения</span>
+      </article>
+      <article class="module-card">
+        <div class="module-head">
+          <h3>Модуль 3. Тактические паттерны</h3>
           <span class="module-tag">Практика</span>
         </div>
-        <div class="module-content">
-          <ul>
-            <li>Гексагональная Архитектура (Ports & Adapters)</li>
-            <li>CQRS и Event Sourcing: когда применять</li>
-            <li>Стратегии тестирования доменных моделей</li>
-          </ul>
+        <div class="module-body">
+          Проектирование агрегатов, инвариантов, объектов-значений, доменных событий и сервисов с фокусом на тестируемость и эволюцию модели.
         </div>
-      </div>
-
+      </article>
+      <article class="module-card">
+        <div class="module-head">
+          <h3>Модуль 4. Внедрение в корпоративной среде</h3>
+          <span class="module-tag">Внедрение</span>
+        </div>
+        <div class="module-body">
+          Интеграция DDD с архитектурой приложения, CQRS, событийным подходом и процессами команды для реальных продуктовых систем.
+        </div>
+      </article>
     </div>
   </div>
 </section>
 
-<section class="testimonials">
+<section class="testimonial section-block">
   <div class="container">
     <div class="testimonial-card">
-      <p class="testimonial-text">"Этот курс полностью изменил наш подход к проектированию ПО. Принципы DDD помогли нам как никогда раньше согласовать техническую реализацию с бизнес-целями, что привело к сокращению time-to-market."</p>
-      <div class="testimonial-author">— Алексей Петров, Ведущий архитектор</div>
+      <p class="testimonial-text">«После внедрения подходов из DDDevotion мы сократили количество архитектурных переработок и получили предсказуемый цикл поставки фич. Курс дал общую модель мышления для архитекторов и команд разработки.»</p>
+      <p class="testimonial-author">Игорь Ковалев, ведущий архитектор</p>
     </div>
   </div>
 </section>
 
-<section class="cta">
+<section class="audience section-block">
   <div class="container">
-    <h2>Для кого этот курс?</h2>
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin: 2rem 0;">
-        <span class="module-tag" style="font-size: 1rem; padding: 0.5rem 1rem;">Архитекторы ПО</span>
-        <span class="module-tag" style="font-size: 1rem; padding: 0.5rem 1rem;">Senior Разработчики</span>
-        <span class="module-tag" style="font-size: 1rem; padding: 0.5rem 1rem;">Tech Leads</span>
-        <span class="module-tag" style="font-size: 1rem; padding: 0.5rem 1rem;">Product Owners</span>
-    </div>
-
-    <h2 style="margin-top: 4rem;">Готовы изменить свой подход?</h2>
-    <button class="cta-button">Узнать когда запуск</button>
-    <p class="cta-subtext">Первый поток стартует скоро</p>
+    <h2>Кому подойдет курс</h2>
+    <ul class="audience-list">
+      <li>Архитекторы ПО</li>
+      <li>Старшие разработчики</li>
+      <li>Технические лиды</li>
+      <li>Владельцы продуктов</li>
+    </ul>
   </div>
 </section>
 
-<footer>
+<section class="cta section-block" id="cta">
   <div class="container">
-    <p>© 2025 DDDevotion. Все права защищены.</p>
+    <h2>Узнайте о старте первого потока</h2>
+    <p>Оставьте интерес, чтобы первыми получить программу, даты и условия участия.</p>
+    <a href="#" class="primary-cta">Узнать когда запуск</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© 2026 DDDevotion</p>
+    <p>Курс по предметно-ориентированному проектированию на русском языке</p>
   </div>
 </footer>
