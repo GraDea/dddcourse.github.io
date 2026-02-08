@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DDDevotion - Курс по Domain-Driven Design</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#895af6",
+                        "background-light": "#f6f5f8",
+                        "background-dark": "#0f172a",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: "Space Grotesk", sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased selection:bg-primary selection:text-white">
+<!-- Navigation -->
+<header class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="bg-primary p-1 rounded-lg">
+<span class="material-symbols-outlined text-white text-2xl">architecture</span>
+</div>
+<span class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">DDDevotion</span>
+</div>
+<div class="flex items-center gap-6">
+<nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-500 dark:text-slate-400">
+<a class="text-slate-500 dark:text-slate-400" href="#features">Особенности</a>
+<a class="text-slate-500 dark:text-slate-400" href="#curriculum">Программа</a>
+<a class="text-slate-500 dark:text-slate-400" href="#audience">Для кого</a>
+</nav>
+<button class="bg-primary/10 text-primary border border-primary/20 px-4 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider">
+                    Скоро
+                </button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative py-20 md:py-32 overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20 mb-8">
+<span class="material-symbols-outlined text-sm">rocket_launch</span>
+<span class="text-xs font-bold uppercase tracking-widest">Профессиональный курс</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-black tracking-tight text-slate-900 dark:text-white mb-6">
+                    Освой <span class="text-primary">Domain-Driven</span> Design
+                </h1>
+<p class="max-w-2xl mx-auto text-lg md:text-xl text-slate-600 dark:text-slate-400 mb-10 leading-relaxed">
+                    Трансформируйте подход к разработке сложного ПО через стратегическое проектирование и тактические паттерны. Постройте архитектуру, которая говорит на языке бизнеса.
+                </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<button class="w-full sm:w-auto bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg shadow-primary/25">
+                        Узнать когда запуск
+                    </button>
+<a class="w-full sm:w-auto px-8 py-4 rounded-xl font-bold text-lg border border-slate-200 dark:border-slate-800" href="#curriculum">
+                        Смотреть программу
+                    </a>
+</div>
+</div>
+<!-- Background Glow Decor -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-4xl opacity-20 pointer-events-none">
+<div class="absolute inset-0 bg-gradient-to-r from-primary via-transparent to-primary blur-[120px]"></div>
+</div>
+</section>
+<!-- Features Section -->
+<section class="py-24 bg-slate-50 dark:bg-slate-900/50" id="features">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">Три столпа курса</h2>
+<p class="text-slate-500 dark:text-slate-400">Глубокое погружение в методологию Эрика Эванса</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 group">
+<div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined">translate</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Единый Язык</h3>
+<p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+                            Устранение барьеров между бизнесом и разработкой через общую терминологию и Ubiquitous Language.
+                        </p>
+</div>
+<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 group">
+<div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined">map</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Стратегический Дизайн</h3>
+<p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+                            Разделение контекстов (Bounded Contexts) и эффективное управление сложностью больших энтерпрайз-систем.
+                        </p>
+</div>
+<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 group">
+<div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined">integration_instructions</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Тактические паттерны</h3>
+<p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+                            Агрегаты, сущности и стоимостные объекты в коде для создания надежной и тестируемой реализации.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Audience Section -->
+<section class="py-24" id="audience">
+<div class="max-w-7xl mx-auto px-6">
+<div class="bg-primary/5 rounded-3xl p-12 border border-primary/10">
+<div class="text-center max-w-3xl mx-auto mb-12">
+<h2 class="text-3xl font-bold mb-4">Для кого этот курс?</h2>
+<p class="text-slate-500 dark:text-slate-400">Курс разработан для опытных специалистов, работающих над сложными бизнес-системами.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<div class="flex flex-col items-center gap-4 text-center">
+<div class="size-16 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary text-3xl">account_tree</span>
+</div>
+<span class="font-bold">Архитекторы ПО</span>
+</div>
+<div class="flex flex-col items-center gap-4 text-center">
+<div class="size-16 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary text-3xl">developer_mode_tv</span>
+</div>
+<span class="font-bold">Senior Разработчики</span>
+</div>
+<div class="flex flex-col items-center gap-4 text-center">
+<div class="size-16 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary text-3xl">groups</span>
+</div>
+<span class="font-bold">Tech Leads</span>
+</div>
+<div class="flex flex-col items-center gap-4 text-center">
+<div class="size-16 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary text-3xl">assignment_ind</span>
+</div>
+<span class="font-bold">Product Owners</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Curriculum Section -->
+<section class="py-24 bg-slate-50 dark:bg-slate-900/50" id="curriculum">
+<div class="max-w-4xl mx-auto px-6">
+<div class="flex items-center justify-between mb-16">
+<div>
+<h2 class="text-3xl md:text-4xl font-bold mb-2">Программа обучения</h2>
+<p class="text-slate-500 dark:text-slate-400">Интенсивный путь от теории к внедрению</p>
+</div>
+<span class="material-symbols-outlined text-slate-300 dark:text-slate-700 text-6xl hidden sm:block">list_alt</span>
+</div>
+<div class="space-y-6">
+<!-- Module 1 -->
+<div class="flex gap-6 p-6 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+<div class="text-primary font-bold text-xl opacity-50 shrink-0">01</div>
+<div>
+<h3 class="text-xl font-bold mb-2">Модуль 1: Основы DDD</h3>
+<p class="text-slate-500 dark:text-slate-400">Введение в философию DDD, понятие сложности и анализ предметной области.</p>
+</div>
+</div>
+<!-- Module 2 -->
+<div class="flex gap-6 p-6 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+<div class="text-primary font-bold text-xl opacity-50 shrink-0">02</div>
+<div>
+<h3 class="text-xl font-bold mb-2">Модуль 2: Стратегический Дизайн</h3>
+<p class="text-slate-500 dark:text-slate-400">Context Mapping, проектирование границ контекстов и интеграция систем.</p>
+</div>
+</div>
+<!-- Module 3 -->
+<div class="flex gap-6 p-6 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+<div class="text-primary font-bold text-xl opacity-50 shrink-0">03</div>
+<div>
+<h3 class="text-xl font-bold mb-2">Модуль 3: Тактический Дизайн</h3>
+<p class="text-slate-500 dark:text-slate-400">Практическая реализация: Aggregates, Entities, Value Objects, Domain Services и Repositories.</p>
+</div>
+</div>
+<!-- Module 4 -->
+<div class="flex gap-6 p-6 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+<div class="text-primary font-bold text-xl opacity-50 shrink-0">04</div>
+<div>
+<h3 class="text-xl font-bold mb-2">Модуль 4: Шаблоны Внедрения</h3>
+<p class="text-slate-500 dark:text-slate-400">Event Sourcing, CQRS, стратегии миграции и внедрение DDD в существующие проекты.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonial Section -->
+<section class="py-24 relative overflow-hidden">
+<div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+<span class="material-symbols-outlined text-primary/40 text-6xl mb-6">format_quote</span>
+<blockquote class="text-2xl md:text-3xl font-medium text-slate-800 dark:text-slate-200 leading-relaxed mb-8 italic">
+                    «DDD — это не про код, это про глубокое понимание бизнеса. Этот курс дает структурный подход, который превращает хаос легаси в понятную и поддерживаемую архитектуру.»
+                </blockquote>
+<div class="flex items-center justify-center gap-4">
+<div class="size-12 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden border-2 border-primary">
+<img alt="Алексей Петров" class="w-full h-full object-cover" data-alt="Portrait of a smiling professional male architect" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkOZHhMyvW7Vz7sTvEwgCIO1DwxgFw0yXdlj6t-nMLz2Vqft1xk2sADVnDCDYbSCcK_izxk1NNdlABhzefBT0AL30VZKPP7y5seJzTCngjyBwY7TmtwkzuJ_qCVsHYWB12VwHOObT0sqc1SG2cytzQilAuoQjlgjfp3bzLzsUW3byX4NNm--_t3TihfV6bgDSJDBnjRyrKA8L3SzqEZBatbwQi406_K-IX9ggtB_N4S-zFPmRFpRPPvHSyeQrtP_gdskHTJ_XMtu4Q"/>
+</div>
+<div class="text-left">
+<div class="font-bold text-slate-900 dark:text-white">Алексей Петров</div>
+<div class="text-sm text-slate-500 dark:text-slate-400">Ведущий архитектор, Fintech Solutions</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 pb-32">
+<div class="max-w-5xl mx-auto px-6">
+<div class="bg-primary rounded-[2rem] p-12 md:p-20 text-center text-white relative overflow-hidden shadow-2xl shadow-primary/40">
+<!-- Decorative background -->
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-white/20 via-transparent to-transparent"></div>
+<div class="relative z-10">
+<h2 class="text-4xl md:text-5xl font-black mb-6">Первый поток стартует скоро</h2>
+<p class="text-xl text-primary-light/90 opacity-90 mb-10 max-w-xl mx-auto">
+                            Оставьте заявку, чтобы получить уведомление о старте продаж и специальную скидку для ранних участников.
+                        </p>
+<form class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto" onsubmit="return false;">
+<input class="flex-1 px-6 py-4 rounded-xl text-slate-900 focus:outline-none focus:ring-4 focus:ring-white/30 border-none" placeholder="Ваш e-mail" type="email"/>
+<button class="bg-background-dark text-white px-8 py-4 rounded-xl font-bold shadow-lg">
+                                Узнать первым
+                            </button>
+</form>
+<p class="mt-6 text-sm opacity-60">Никакого спама. Только важные новости о курсе.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="py-12 border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex items-center gap-2">
+<div class="bg-primary p-1 rounded-lg">
+<span class="material-symbols-outlined text-white text-lg">architecture</span>
+</div>
+<span class="text-lg font-bold tracking-tight">DDDevotion</span>
+</div>
+<div class="text-slate-500 dark:text-slate-400 text-sm">
+                © 2025 DDDevotion. Все права защищены.
+            </div>
+<div class="flex items-center gap-6">
+<a class="text-slate-400" href="#">Telegram</a>
+<a class="text-slate-400" href="#">YouTube</a>
+<a class="text-slate-400" href="#">LinkedIn</a>
+</div>
+</div>
+</footer>
+</body></html>
