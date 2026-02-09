@@ -6,7 +6,9 @@ subtitle: Освойте DDD и проектируйте системы, кот�
 
 <header class="site-header">
   <div class="container header-inner">
-    <div class="logo">DDDevotion</div>
+    <a href="{{ '/' | relative_url }}" class="brand" aria-label="DDDevotion">
+      <img src="{{ '/assets/images/logo.jpg' | relative_url }}" alt="Логотип DDDevotion" class="logo-image">
+    </a>
     <a href="#cta" class="soon-button">Скоро</a>
   </div>
 </header>

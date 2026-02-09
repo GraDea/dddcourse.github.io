@@ -26,6 +26,12 @@
 - No animations or transitions; static confidence is part of the brand voice.
 - Mobile readability is mandatory: stacked sections and clear CTA visibility.
 
+## Brand Assets
+
+- Header logo uses `assets/images/logo.jpg` (image-based brand mark, not text logo).
+- Keep logo visible on dark header with clean spacing and no decorative effects.
+- If logo file is replaced, keep the same path to avoid breaking template references.
+
 ## Technical Constraints
 
 - Stack: GitHub Pages + Jekyll.
@@ -37,3 +43,4 @@
 - Working branch for publishing: `gh-pages`.
 - Make atomic commits with clear intent in message.
 - Validate final rendering on desktop and mobile after each significant layout update.
+- If implementation is complete and verification is sufficient, commit and push before reporting done.

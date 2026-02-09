@@ -60,10 +60,16 @@ h3 {
     padding: 1rem 1.5rem;
 }
 
-.logo {
-    font-weight: 800;
-    font-size: 1.25rem;
-    letter-spacing: 0.02em;
+.brand {
+    display: inline-flex;
+    align-items: center;
+}
+
+.logo-image {
+    display: block;
+    width: 164px;
+    height: auto;
+    border-radius: 8px;
 }
 
 .soon-button {
